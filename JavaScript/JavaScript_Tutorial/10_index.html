@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Strings Important Functions</h1>
+
+    <script>
+        //javascript code
+        //String important functions
+        let s = "I Love Java Script";
+        console.log(s);
+
+        //1.Length- numeber of charecter in String
+        let len = s.length;  //BAsically Length he 1 property aahe. 
+        console.log("lenhth",len);
+
+        //2.concat()
+
+        let s1 = "And Java";
+       // console.log(s +" " +s1);
+       let ans = s.concat(" ",s1);
+       console.log(ans);
+
+       //3.chatAt(x)
+
+       let ch = s.charAt(3);
+       console.log(ch);
+
+       //4.indexOf
+        
+       let index = s.indexOf("v");
+       console.log(index);
+
+       //5.lastIndexOf
+
+       let lastindex = s.lastIndexOf("a");
+       console.log(lastindex); 
+
+
+       //6.toUpperCase
+
+       let touppercase = s.toUpperCase();
+       console.log(touppercase);
+
+       //7.toUpperCase
+
+       let tolowercase = s.toLowerCase();
+       console.log(tolowercase);
+
+       //8.subString(Start,End)  basically splitting sathi vaprtat
+        //end is not included its a excluded.
+
+       let substring = s.substring(2,6);
+       console.log(substring);
+
+       //9.startsWith()
+
+       console.log(s.startsWith("I Love")); 
+
+       //10.endswith
+
+       console.log(s.endsWith("t"));
+
+        //11.split
+
+        let sp = s.split(" ");
+        console.log(typeof sp);
+        console.log(sp);
+        console.log(sp[0]);
+        console.log(sp[1]);
+        console.log(sp[2]);
+        console.log(sp[3]);
+       
+       
+        //12.trim-->to remove whie spaces
+
+        let s2 = "         My Content  ";
+        let s3 = s2.trim();
+        console.log(s2);
+        console.log(s3);
+
+    </script>
+
+</body>
+</html>

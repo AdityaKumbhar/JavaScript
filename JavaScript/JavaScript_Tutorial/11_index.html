@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Important Operations</title>
+</head>
+<body>
+    <h1>5  ImportantOperations</h1>
+    <script>
+        //1. How to check equality of Two String
+        //==,===
+        //literal
+
+        let str1 = "Java Script";
+        let str2 = "Java Script";
+        console.log(str1)
+        console.log(str2)
+        console.log(str1 == str2)
+            if(str1 == str2){
+                console.log("both Strings Are Equlas ")
+            }
+     
+            // Creating String In Anothe Way (Creating object)
+
+            let str3 = new String("JavaScript")
+            let str4= new String("JavaScript")
+            console.log(str3)
+            console.log(str4)
+
+           // 2. Compare The String
+           let s1="A"
+           let s2="B"
+           
+           //to comapre the string use localCompare function
+            let result = s1.localeCompare(s2)
+
+            //exeact match:0
+            //s1<s2 :-1
+            //s1>s2 : +1
+
+            //65<66
+            // A-Z 65-90
+            //a-z 98-122
+            console.log(result)
+
+            console.log(s2.charCodeAt(0))
+
+
+            //3.Replace certin word with another
+
+            let oldString = "I Hate JS"
+            let newString = oldString.replace("Hate","Love")
+
+            console.log(newString);
+            console.log(oldString)
+
+            //4. accessing charecter string
+
+            console.log(oldString.charAt(0));
+            console.log(oldString[2]);
+
+            //5.converting String to array using split function
+            let as=oldString.split(" ");
+            console.log(as);
+            let chara = oldString.split("");
+            console.log(chara)
+
+    </script>
+</body>
+</html>
+
+
+
+    <!-- 1.How to check equality of two Strings
+
+    2.Compareing Two Strings
+
+    3.Replace certains word with another
+    
+    4.accessing charecter -string[0]
+        charAt(index)
+    
+    5.concerting string to array using split function   -->

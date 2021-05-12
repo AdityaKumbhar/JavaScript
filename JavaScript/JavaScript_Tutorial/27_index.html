@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Navigation</title>
+</head>
+<body>
+    <div id  ="container">
+        <h1 id="title">We Are Learinig To Java Scripts</h1>
+        <p id="content">
+            <span>
+                JavaScript Is Most Polular Programming Language FOr FrontEnd AsWell As BackEnd
+            </span>
+        </p>
+        <h2>This is A Java Script</h2>
+    </div>
+
+    <button OnClick="buttonClicked()">Click For The Magic</button>
+    <script>
+        // java Script Code
+
+        //creating a function
+
+       function buttonClicked(){
+           
+        let containerOb =document.getElementById("container");
+        //console.log(containerOb);
+
+        //first child
+        console.log(containerOb.firstElementChild.nodeName);
+        let firstChild = containerOb.firstElementChild;
+        firstChild.style.backgroundColor = "Black";
+        firstChild.style.color = "Red";
+        console.log(firstChild);
+
+        firstChild.innerHTML = "Hii. Going To Change...!";
+
+        //last Child
+        let lastChild = containerOb.lastElementChild;
+        lastChild.style.backgroundColor = "Black";
+        lastChild.style.color = "Green";
+
+        //sgale nodes pahij Astil tr child Node vapray ch
+
+        // let nodes=containerOb.childNodes;
+
+        // for(let n of nodes){
+        //     console.log(n.nodeName)
+        // }
+
+        //by using children only element dkhvel
+
+        //child Node
+        
+        let nodes=containerOb.children;
+
+        for(let n of nodes){
+            console.log(n.nodeName)
+        }
+
+        //parent Node
+        let parentNode=containerOb.parentNode;
+        console.log(parentNode.nodeName);
+
+        //how to access previous sibling and next siblings
+
+        let titleOb = document.getElementById("title")
+        let nextS = titleOb.nextElementSibling;
+        console.log(nextS.nodeName);
+       } 
+    </script>
+</body>
+</html>

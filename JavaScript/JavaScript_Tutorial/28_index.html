@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Timers</title>
+</head>
+<body>
+    <h1>Java Script Timers..</h1>
+
+    <button onclick="start()">Start</button>
+
+    <button onclick="stop()">Stop</button>
+
+    <script>
+
+        //setTimeout()
+        //setInterval()
+
+        //We Have To write Our code that We Want to execute after 5 Seconds : Use Case
+         
+        function myCode(){
+            console.log("Hey I M Rocky..!");
+            console.log("How R U..?");
+        }
+        
+        let timer;
+        function start(){ 
+            //We Have To Start
+            
+            //syntax of setTimeOut Function..
+            //setTimeout(function_name,delay in milisecond)
+            
+            //setTimeout(myCode,5000);
+
+            timer = setInterval(myCode,2000)
+            console.log(timer);
+        }
+
+        function stop(){
+            clearInterval(timer);
+           
+        }
+    </script>
+</body>
+</html>

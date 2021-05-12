@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Common Array Operations</title>
+</head>
+<body>
+    <h1>JavaScript Common Array Operations</h1>
+    <script>
+        //Array operations
+        //Create Array
+        let names = ['Aditya','Ashok','Kumbhar'];
+        console.log(names);
+        console.log(names.length);
+
+        //Array access using Index
+
+        console.log(names[0])
+        console.log(names[1])
+        console.log(names[2])
+
+        //loop over an array
+        //for each loop
+
+        names.forEach(function(item,index) {
+            console.log(index,"=>",item);
+        });
+
+        let nums=[10,11,12,13];
+        let sum=0;
+
+        nums.forEach(function(it ,i){
+        sum=sum+it;    
+        });
+        console.log("sum",sum)
+
+        console.log(names);
+
+        //Adding element in last
+
+        names.push("Sneha");
+        console.log(names);
+
+        //remove element from last
+        let r = names.pop();
+        console.log(r);
+        console.log(names);
+
+        //remove element from beginning
+        let r1=names.shift()
+        console.log(r1)
+        console.log(names)
+
+         //add element from beginning
+         let r2=names.unshift("Aditya");
+         console.log(r2);
+         console.log(names);
+
+         let pos = names.indexOf("Ashok");
+         console.log(pos)
+       
+         //remove the element from any position
+         //using splice
+         //splice(pos,n)
+         
+         console.log(names.splice(1,2))
+         console.log(names);
+
+         //copy an array
+         let copy = names.slice();
+         //shallow copy
+         console.log(copy);
+         console.log(names);
+
+    </script>
+</body>
+</html>

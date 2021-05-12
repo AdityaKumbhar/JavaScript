@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selectors</title>
+
+    <!-- Java Script -->
+    <script>
+        console.log("Head Section");
+    </script>
+</head>
+<body>
+    <h1>DOM Document Object Model......!</h1>
+    <h2 id = "Pratibha">Aditya Ashok Kumbhar</h2>
+    
+    <h1 class = "myclass">Hello World</h1>
+    <h1 class = "myclass">Hello World</h1>
+    <h1 class = "myclass">Hello World</h1>
+
+    <!-- Java Script -->
+
+    <script>
+        console.log("Inside Body")
+
+        let ht = document.documentElement; // purn html ch code bhet toh 
+        console.log(ht);
+
+        let bd = document.body; // only body
+        console.log(bd);
+
+        let hd = document.head; //only head
+        console.log(hd)
+
+        let  ti = document.title; // titel bgnya krta
+        console.log(ti)
+
+        // //Select Element By Id
+        // //using getElementById() - return single object miltat
+
+        // let h2 = document.getElementById("Pratibha");
+        // console.log(h2)
+
+        // h2.innerHTML = "Pranoti Ashok Kumbhar";
+
+        // //To Change The Text Color
+        // h2.style.color = "Green";
+
+        // //To Change The BAckgroung Color
+        // h2.style.background = "Black";
+        
+        //Selcting ElementByclassName  vaprla tr multiple objects miltat
+        //Using getElementByClassName(className)
+
+        // let el = document.getElementsByClassName("myclass");
+
+        // for(let element of el){
+        //     console.log(element);
+        //     element.style.color = "Green";
+        //     //element.style.background = "Black";
+        // }
+
+        //Selecting Element with the help of css Selectors
+
+        //1.querySelectors--------------->Single Element Return karnr
+        //2.querySelectorsAll------------>List Of Element return Karnr
+        //1.
+        // let els = document.querySelector(".myclass");
+        // console.log(els)
+        //2.
+        let els = document.querySelectorAll(".myclass");
+        console.log(els)
+
+        for(let e of els){
+            console.log(e);
+            e.style.color ="Green";
+        }
+
+    </script>
+</body>
+</html>

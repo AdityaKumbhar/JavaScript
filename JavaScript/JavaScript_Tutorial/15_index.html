@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions In JavaScripts</title>
+</head>
+<body>
+    <h1>Learning Fuctions And Arrow Functions In JavaScripts</h1>
+    <script>
+        //functions
+
+        //how to create the function
+        function firstfun(){
+            //body open
+            
+            //here we write a task
+            console.log("Hello ,");
+            console.log("How R U..?");
+            console.log("What R U Doing...");
+        }//close body
+        
+        
+        //function With Arguments and return types
+
+        function doSum(a,b)//a and b are the formal parameter
+        {
+            let c =a+b;
+            return c;
+        }
+
+        console.log("First Line");
+        console.log("Second Line");
+        firstfun();
+
+        console.log("Mid Of The Code");
+        firstfun();
+
+        let s=doSum(10,20);//10 and 20 are actual parameners
+        console.log("The Sum Is ",s);
+        
+        //arrow function
+
+        const tocelcius = (fahrenheit) =>{
+            let result =(5/9)*(fahrenheit-32);
+            return result;
+        };
+        
+        let c = tocelcius(102);
+        console.log(c);
+    </script>
+</body>
+</html>

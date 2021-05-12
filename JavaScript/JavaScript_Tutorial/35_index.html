@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Time In Java Script</title>
+</head>
+
+<body>
+    <h1>Date Time Example In Java Script</h1>
+    <script>
+        var d = new Date();
+        console.log(d);
+        console.log(d.toDateString());
+        console.log(d.toISOString());
+        console.log(d.toLocaleDateString());
+        console.log(d.toString());
+        console.log(d.toUTCString());
+        console.log(`Date ${d.getDate()}`);
+        console.log(`Month ${d.getMonth() + 1}`);
+        console.log(`Year ${d.getFullYear()}`);
+
+        let d1 = new Date("01 Jan 2022");
+        console.log(d1);
+    </script>
+</body>
+
+</html>
+
+
+<!-- 
+
+outputs
+
+Sat Apr 17 2021 12:50:18 GMT+0530 (India Standard Time)
+35_index.html:16 Sat Apr 17 2021
+35_index.html:17 2021-04-17T07:20:18.575Z
+35_index.html:18 4/17/2021
+35_index.html:19 Sat Apr 17 2021 12:50:18 GMT+0530 (India Standard Time)
+35_index.html:20 Sat, 17 Apr 2021 07:20:18 GMT
+Date 17
+Month 4
+Year 2021
+Sat Jan 01 2022 00:00:00 GMT+0530 (India Standard Time)
+
+ -->

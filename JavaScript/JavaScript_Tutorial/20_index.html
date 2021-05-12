@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects And Objects Operations</title>
+</head>
+<body>
+    <h1>Objects And Objects Operations</h1>
+    <script>
+        
+        //creating Objects
+
+        let ob = {
+                Name : 'Aditya',
+                Age : 25,
+                Address : 'Nashik',
+                Phone : 9896,
+                Last_Name : 'Kumbhar',
+
+                //Cretae The Function
+
+                display: function(){
+                    console.log("Diaplay Properties......")
+                    console.log (this.Name);
+                    console.log (this.Age);
+                    console.log (this.Address);
+                }
+        };
+
+        // console.log(ob);
+        // console.log(typeof ob);
+
+
+        // //Accessing Properties Of Object 
+
+        // //First Way.
+        // console.log(ob.Name);
+        // console.log(ob.Address);
+
+        // //Second Way
+        // console.log(ob["Age"]);
+        // console.log(ob["Phone"]);
+
+        // ob.display();
+
+        //objects chya keys Kadnya sathi for..in loop vaprtoy  for looping properties
+
+        for(let key in ob){
+            console.log(key +" "+ob[key]);
+        }
+
+       // ob.display(); same ch work krty  ob["display"](); srakha
+
+       ob["display"]();
+
+        //changing values of properties
+
+        console.log(ob.Name)
+
+        ob.Name = "Sneha";
+        console.log(ob.Name)
+
+        console.log(ob)
+
+        ob["Last_Name"] = "Kuldharan";
+        console.log(ob);
+
+        //dyanamic adding properties
+
+        ob['Email'] = "Sneha@Kuldharan.com";
+        console.log(ob);
+
+        //deleting Properties
+
+        delete ob['Phone'];
+        console.log(ob);
+    </script>
+</body>
+</html>

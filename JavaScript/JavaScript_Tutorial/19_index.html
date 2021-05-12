@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For..in And For...of Loops In Java Script </title>
+</head>
+<body>
+    <h1>For..in And For...of Loops In Java Script</h1>
+
+    <script>
+        //1. For..in Loop
+        // console.log("For in example")
+
+        // let s1={
+        //     name  :"Aditya",
+        //     Phone :123654897,
+        //     Address :"Nashik", 
+        // };
+
+        // for(let k in s1){
+        //     console.log(`${k}=> ${s1[k]}`)
+        // }
+
+        // //using element of array
+        // let arr = ['Aditya','Ashok','Kumbhar']
+
+        // for(var i in arr)
+        // {
+        //     console.log(arr[i])
+        // }
+
+        //3.for..of loop
+
+        let ar = ["Aditya","Ashok","Kumbhar"];
+
+        for (let items of ar){
+            console.log(items)
+        }
+
+        // o/p    Aditya
+        //        Ashok
+        //        Kumbhar
+
+   
+        //for..in loop
+        for (let items in ar){
+            console.log(items)
+        }
+
+        // o/p 0
+        //     1
+        //     2
+
+    </script>
+</body>
+</html>
